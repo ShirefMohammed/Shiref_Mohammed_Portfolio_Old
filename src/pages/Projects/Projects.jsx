@@ -7,7 +7,7 @@ import {
   FullStack_Projects,
   UI_Designs,
   BootStrap_Designs,
-} from '../../Data/ProjectsData';
+} from '../../data/ProjectsData';
 
 const Projects = () => {
   return (
