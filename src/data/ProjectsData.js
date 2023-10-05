@@ -1,31 +1,31 @@
 // Import React Projects Images
-import amazon_ecomerce_image from '../Assets/amazon_ecomerce_image.png'
-import real_state_image from '../Assets/real_state_image.png'
-import fitness_gym_image from '../Assets/fitness_gym_image.png'
-import youtube_clone from '../Assets/youtube_clone.png'
-import studying_app_image from '../Assets/studying-app_image.png'
+import amazon_ecomerce_image from '../assets/amazon_ecomerce_image.png'
+import real_state_image from '../assets/real_state_image.png'
+import fitness_gym_image from '../assets/fitness_gym_image.png'
+import youtube_clone from '../assets/youtube_clone.png'
+import studying_app_image from '../assets/studying-app_image.png'
 
 // Import JavaScript Projects Images
-import quiz_app_image from '../Assets/quiz_app_image.png'
-import podcast_youtube_clone from '../Assets/podcast_youtube_clone.png'
-import weather_app_image from '../Assets/weather_app_image.png'
-import movie_guid_app_image from '../Assets/movie_guid_app_image.png'
-import restaurant_app_image from '../Assets/restaurant_app_image.png'
-import seven_theme_app_image from '../Assets/seven_theme_app_image.png'
+import quiz_app_image from '../assets/quiz_app_image.png'
+import podcast_youtube_clone from '../assets/podcast_youtube_clone.png'
+import weather_app_image from '../assets/weather_app_image.png'
+import movie_guid_app_image from '../assets/movie_guid_app_image.png'
+import restaurant_app_image from '../assets/restaurant_app_image.png'
+import seven_theme_app_image from '../assets/seven_theme_app_image.png'
 
 
 // Import JavaScript FullStack Images
-import recipe_social_media_app_image from '../Assets/recipe_social_media_app_image.png'
+import recipe_social_media_app_image from '../assets/recipe_social_media_app_image.png'
 
 // Import UI Designs Images
-import dashboard_1_image from '../Assets/dashboard_1_image.png'
-import portfolio_template_2_image from '../Assets/portfolio_template_2_image.png'
-import portfolio_template_1_image from '../Assets/portfolio_template_1_image.png'
-import parallax_website_1_image from '../Assets/parallax_website_1_image.png'
+import dashboard_1_image from '../assets/dashboard_1_image.png'
+import portfolio_template_2_image from '../assets/portfolio_template_2_image.png'
+import portfolio_template_1_image from '../assets/portfolio_template_1_image.png'
+import parallax_website_1_image from '../assets/parallax_website_1_image.png'
 
 // Import Bootstrap Designs Images
-import bootstrap_design_1_image from '../Assets/bootstrap_design_1_image.png'
-import bootstrap_design_2_image from '../Assets/bootstrap_design_2_image.png'
+import bootstrap_design_1_image from '../assets/bootstrap_design_1_image.png'
+import bootstrap_design_2_image from '../assets/bootstrap_design_2_image.png'
 
 
 export const React_Projects = [

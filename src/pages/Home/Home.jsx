@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import style from './Home.module.css';
-import hero from '../../Assets/shiref_mohammed_image_2.jpg'
+import hero from '../../assets/shiref_mohammed_image_2.jpg'
 
 const Home = () => {
   return (
