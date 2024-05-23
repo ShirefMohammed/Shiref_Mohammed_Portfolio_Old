@@ -1,0 +1,31 @@
+.projects {
+  padding: 25px 15px 50px 15px;
+}
+
+.projects .projects_list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 15px;
+}
+
+@media (max-width: 500px) {
+  .projects .projects_list {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+
+.projects > a {
+  width: 170px;
+  height: 48px;
+  margin: 15px auto 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.projects > a span {
+  font-weight: 500;
+}

@@ -1,306 +1,114 @@
-import { Link } from 'react-router-dom';
-import style from './Projects.module.css';
-
-import {
-  React_Projects,
-  JavaScript_Projects,
-  FullStack_Projects,
-  UI_Designs,
-  BootStrap_Designs,
-} from '../../data/ProjectsData';
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import projects from "../../data/projectsData.json";
+import style from "./Projects.module.css";
 
 const Projects = () => {
+  const fullstackProjects = projects
+    .filter((project) => project.type === "fullstack")
+    .reverse();
+
+  const reactProjects = projects
+    .filter((project) => project.type === "react")
+    .reverse();
+
+  const javascriptProjects = projects
+    .filter((project) => project.type === "javascript")
+    .reverse();
+
+  const uiProjects = projects
+    .filter((project) => project.type === "ui")
+    .reverse();
+
+  const bootstrapProjects = projects
+    .filter((project) => project.type === "bootstrap")
+    .reverse();
+
   return (
-    <div className={style.projects} id="projects">
-      <div className="container">
-        <div className={style.content}>
-          <h2 className="section_title">
-            My <span>Projects</span>
-          </h2>
+    <section className={style.projects}>
+      {/* Section Title */}
+      <h2 className="section_title">
+        My <span>Projects</span>
+      </h2>
 
-          <div className={style.project_sections}>
-            <ReactProjects />
-            <JavaScriptProjects />
-            <FullStackProjects />
-            <UIDesigns />
-            <BootStrapDesigns />
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
+      {/* Fullstack MERN Projects Section */}
+      {fullstackProjects.length > 0 ? (
+        <section className={style.fullstack_projects}>
+          <h3>Fullstack MERN Projects</h3>
+          <ul>
+            {fullstackProjects.map((project) => (
+              <ProjectCard key={project._id} project={project} />
+            ))}
+          </ul>
+        </section>
+      ) : (
+        ""
+      )}
 
-const ReactProjects = () => {
-  return (
-    <div className={style.react_projects}>
-      <h3 className={style.project_sections_title}>
-        React Projects
-      </h3>
+      <br />
 
-      <div className={style.items}>
-        {
-          React_Projects?.length > 0 && React_Projects.map((item, index) => (
-            <div className={style.item} key={index}>
-              <img
-                className={style.item_image}
-                src={item.img}
-                alt='item.img'
-              />
+      {/* React Projects Section */}
+      {reactProjects.length > 0 ? (
+        <section className={style.react_projects}>
+          <h3>React Projects</h3>
+          <ul>
+            {reactProjects.map((project) => (
+              <ProjectCard key={project._id} project={project} />
+            ))}
+          </ul>
+        </section>
+      ) : (
+        ""
+      )}
 
-              <div className={style.item_title}>
-                {item.title}
-              </div>
+      <br />
 
-              <div className={style.item_description}>
-                {item.description}
-              </div>
+      {/* Javascript Projects Section */}
+      {javascriptProjects.length > 0 ? (
+        <section className={style.javascript_projects}>
+          <h3>Javascript Projects</h3>
+          <ul>
+            {javascriptProjects.map((project) => (
+              <ProjectCard key={project._id} project={project} />
+            ))}
+          </ul>
+        </section>
+      ) : (
+        ""
+      )}
 
-              <div className={style.item_links}>
-                {
-                  item.app_link &&
-                  <Link
-                    to={item.app_link}
-                    className='btn_1'
-                  >
-                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                  </Link>
-                }
+      <br />
 
-                {
-                  item.code_link &&
-                  <Link
-                    to={item.code_link}
-                    className='btn_1'
-                  >
-                    <i className="fa-solid fa-code"></i>
-                  </Link>
-                }
-              </div>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  )
-}
+      {/* UI Projects Section */}
+      {uiProjects.length > 0 ? (
+        <section className={style.ui_projects}>
+          <h3>UI Projects</h3>
+          <ul>
+            {uiProjects.map((project) => (
+              <ProjectCard key={project._id} project={project} />
+            ))}
+          </ul>
+        </section>
+      ) : (
+        ""
+      )}
 
-const JavaScriptProjects = () => {
-  return (
-    <div className={style.javascript_projects}>
-      <h3 className={style.project_sections_title}>
-        JavaScript Projects
-      </h3>
+      <br />
 
-      <div className={style.items}>
-        {
-          JavaScript_Projects?.length > 0 &&
-          JavaScript_Projects.map((item, index) => (
-            <div className={style.item} key={index}>
-              <img
-                className={style.item_image}
-                src={item.img}
-                alt='item.img'
-              />
+      {/* Bootstrap Projects Section */}
+      {bootstrapProjects.length > 0 ? (
+        <section className={style.bootstrap_projects}>
+          <h3>Bootstrap Projects</h3>
+          <ul>
+            {bootstrapProjects.map((project) => (
+              <ProjectCard key={project._id} project={project} />
+            ))}
+          </ul>
+        </section>
+      ) : (
+        ""
+      )}
+    </section>
+  );
+};
 
-              <div className={style.item_title}>
-                {item.title}
-              </div>
-
-              <div className={style.item_description}>
-                {item.description}
-              </div>
-
-              <div className={style.item_links}>
-                {
-                  item.app_link &&
-                  <Link
-                    to={item.app_link}
-                    className='btn_1'
-                  >
-                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                  </Link>
-                }
-
-                {
-                  item.code_link &&
-                  <Link
-                    to={item.code_link}
-                    className='btn_1'
-                  >
-                    <i className="fa-solid fa-code"></i>
-                  </Link>
-                }
-              </div>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  )
-}
-
-const FullStackProjects = () => {
-  return (
-    <div className={style.javascript_projects}>
-      <h3 className={style.project_sections_title}>
-        Fullstack Projects
-      </h3>
-
-      <div className={style.items}>
-        {
-          FullStack_Projects?.length > 0 &&
-          FullStack_Projects.map((item, index) => (
-            <div className={style.item} key={index}>
-              <img
-                className={style.item_image}
-                src={item.img}
-                alt='item.img'
-              />
-
-              <div className={style.item_title}>
-                {item.title}
-              </div>
-
-              <div className={style.item_description}>
-                {item.description}
-              </div>
-
-              <div className={style.item_links}>
-                {
-                  item.app_link &&
-                  <Link
-                    to={item.app_link}
-                    className='btn_1'
-                  >
-                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                  </Link>
-                }
-
-                {
-                  item.code_link &&
-                  <Link
-                    to={item.code_link}
-                    className='btn_1'
-                  >
-                    <i className="fa-solid fa-code"></i>
-                  </Link>
-                }
-              </div>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  )
-}
-
-const UIDesigns = () => {
-  return (
-    <div className={style.UI_designs}>
-      <h3 className={style.project_sections_title}>
-        UI Designs
-      </h3>
-
-      <div className={style.items}>
-        {
-          UI_Designs.length > 0 && UI_Designs.map((item, index) => (
-            <div className={style.item} key={index}>
-              <img
-                className={style.item_image}
-                src={item.img}
-                alt='item.img'
-              />
-
-              <div className={style.item_title}>
-                {item.title}
-              </div>
-
-              <div className={style.item_description}>
-                {item.description}
-              </div>
-
-              <div className={style.item_links}>
-                {
-                  item.app_link &&
-                  <Link
-                    to={item.app_link}
-                    className='btn_1'
-                  >
-                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                  </Link>
-                }
-
-                {
-                  item.code_link &&
-                  <Link
-                    to={item.code_link}
-                    className='btn_1'
-                  >
-                    <i className="fa-solid fa-code"></i>
-                  </Link>
-                }
-              </div>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  )
-}
-
-const BootStrapDesigns = () => {
-  return (
-    <div className={style.bootStrap_designs}>
-      <h3 className={style.project_sections_title}>
-        BootStrap Designs
-      </h3>
-
-      <div className={style.items}>
-        {
-          BootStrap_Designs.length > 0 && BootStrap_Designs.map((item, index) => (
-            <div className={style.item} key={index}>
-              <img
-                className={style.item_image}
-                src={item.img}
-                alt='item.img'
-              />
-
-              <div className={style.item_title}>
-                {item.title}
-              </div>
-
-              <div className={style.item_description}>
-                {item.description}
-              </div>
-
-              <div className={style.item_links}>
-                {
-                  item.app_link &&
-                  <Link
-                    to={item.app_link}
-                    className='btn_1'
-                  >
-                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                  </Link>
-                }
-
-                {
-                  item.code_link &&
-                  <Link
-                    to={item.code_link}
-                    className='btn_1'
-                  >
-                    <i className="fa-solid fa-code"></i>
-                  </Link>
-                }
-              </div>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  )
-}
-
-export default Projects
+export default Projects;

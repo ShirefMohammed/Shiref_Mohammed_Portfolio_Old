@@ -1,45 +1,35 @@
-import { Link } from 'react-router-dom';
-import style from './Footer.module.css';
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import style from "./Footer.module.css";
 
 const Footer = () => {
   return (
     <footer className={style.footer}>
-      <div className="container">
-        <div className={style.content}>
-          <ul className={style.links}>
-            <li>
-              <Link
-                to='https://www.instagram.com/shiref_nohammed/'
-                className='btn_1'
-              >
-                <i className="fa-brands fa-instagram"></i>
-              </Link>
-            </li>
-            <li>
-              <Link
-                to='https://www.linkedin.com/in/shiref-mohammed-57342624b/'
-                className='btn_1'
-              >
-                <i className="fa-brands fa-linkedin-in"></i>
-              </Link>
-            </li>
-            <li>
-              <Link
-                to='https://github.com/ShirefMohammed'
-                className='btn_1'
-              >
-                <i className="fa-brands fa-github"></i>
-              </Link>
-            </li>
-          </ul>
+      <ul className={style.links}>
+        <li>
+          <Link
+            to="https://github.com/ShirefMohammed"
+            target="_blank"
+            className="first_btn"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="https://www.linkedin.com/in/shiref-mohammed-57342624b/"
+            target="_blank"
+            className="first_btn"
+          >
+            <FontAwesomeIcon icon={faLinkedinIn} />
+          </Link>
+        </li>
+      </ul>
 
-          <div className={style.copy_right}>
-            Copyright &copy; 2023 created by shiref mohammed 
-          </div>
-        </div>
-      </div>
+      <div className={style.created_by}>Created by Shiref Mohammed</div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

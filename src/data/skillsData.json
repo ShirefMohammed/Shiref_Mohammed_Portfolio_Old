@@ -1,0 +1,77 @@
+[
+  {
+    "_id": "1",
+    "name": "HTML",
+    "image": "../../public/skills_images/HTML.png"
+  },
+  {
+    "_id": "2",
+    "name": "CSS",
+    "image": "../../public/skills_images/CSS.png"
+  },
+  {
+    "_id": "3",
+    "name": "Javascript",
+    "image": "../../public/skills_images/JS.png"
+  },
+  {
+    "_id": "4",
+    "name": "React",
+    "image": "../../public/skills_images/React.png"
+  },
+  {
+    "_id": "5",
+    "name": "Redux",
+    "image": "../../public/skills_images/Redux.png"
+  },
+  {
+    "_id": "6",
+    "name": "Bootstrap",
+    "image": "../../public/skills_images/Bootstrap.png"
+  },
+  {
+    "_id": "7",
+    "name": "Tailwind CSS",
+    "image": "../../public/skills_images/Tailwind.png"
+  },
+  {
+    "_id": "8",
+    "name": "Git",
+    "image": "../../public/skills_images/Git.png"
+  },
+  {
+    "_id": "9",
+    "name": "Node JS",
+    "image": "../../public/skills_images/Node.png"
+  },
+  {
+    "_id": "10",
+    "name": "Express",
+    "image": "../../public/skills_images/Express.png"
+  },
+  {
+    "_id": "11",
+    "name": "Mongodb",
+    "image": "../../public/skills_images/Mongodb.png"
+  },
+  {
+    "_id": "12",
+    "name": "Database Fundimentals",
+    "image": "../../public/skills_images/Database.png"
+  },
+  {
+    "_id": "13",
+    "name": "Data Structures & Algorithms",
+    "image": "../../public/skills_images/DAA.png"
+  },
+  {
+    "_id": "14",
+    "name": "Computer Science Fundimentals",
+    "image": "../../public/skills_images/CS.png"
+  },
+  {
+    "_id": "15",
+    "name": "C#",
+    "image": "../../public/skills_images/CSharp.png"
+  }
+]

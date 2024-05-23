@@ -1,0 +1,97 @@
+.project {
+  width: 100%;
+  max-width: 800px;
+  min-height: calc(100vh - 175px);
+  padding: 15px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--main);
+}
+
+.project h2 span {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text);
+  text-transform: capitalize;
+}
+
+.project h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--main);
+}
+
+.project video {
+  width: 100%;
+  background-color: black;
+  object-fit: contain;
+  user-select: none;
+  aspect-ratio: 5 / 3;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.project .images_slider {
+  position: relative;
+  width: 100%;
+  max-height: calc(100vh - 200px);
+  aspect-ratio: 5 / 3;
+  overflow-y: auto;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.project .images_slider img {
+  width: 100%;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.project .about q {
+  display: block;
+  width: calc(100% - 25px);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-left: 25px;
+}
+
+.project .technologies ul,
+.project .futures ul,
+.project .links ul {
+  margin-left: 50px;
+}
+
+.project .technologies ul li,
+.project .futures ul li,
+.project .links ul li {
+  font-size: 14px;
+}
+
+.project .links ul li span {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.project .links ul li a {
+  word-break: break-all;
+  width: fit-content;
+  font-size: 14px;
+  text-decoration: underline;
+  margin-left: 10px;
+}

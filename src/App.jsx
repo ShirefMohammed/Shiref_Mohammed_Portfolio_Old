@@ -1,76 +1,35 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
-
-import { ScrollToTop } from "./hooks";
-
-import {
-  Header,
-  Footer,
-} from './components';
-
-import {
-  Home,
-  Skills,
-  Projects,
-  Contact,
-  NoPage,
-} from './pages';
+import { useEffect } from "react";
+import { useLocation, Routes, Route } from "react-router-dom";
+import useApplyTheme from "./Hooks/useApplyTheme";
+import { Header, Footer } from "./components";
+import { Home, Project, Projects, NotFoundPage } from "./pages";
 
 function App() {
+  const { pathname } = useLocation();
+  const applyTheme = useApplyTheme();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  useEffect(() => {
+    applyTheme();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <BrowserRouter>
-      <div className="app" id="app">
-        <Header />
+    <section className="app">
+      <Header />
 
-        <Routes>
-          <Route
-            path='/'
-            element={<Home />}
-          />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:projectId" element={<Project />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
 
-          <Route
-            path="/skills"
-            element={<Skills />}
-          />
-
-          <Route
-            path="/projects"
-            element={<Projects />}
-          />
-
-          <Route
-            path="/contact"
-            element={<Contact />}
-          />
-
-          <Route
-            path="*"
-            element={<NoPage />}
-          />
-        </Routes>
-
-
-        <Footer />
-      </div>
-
-      {/* Scroll to top on every page */}
-      <ScrollToTop />
-
-      {/* Toast Container */}
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
-    </BrowserRouter>
+      <Footer />
+    </section>
   );
 }
 

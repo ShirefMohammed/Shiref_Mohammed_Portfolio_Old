@@ -1,55 +1,27 @@
-import { Link } from 'react-router-dom';
-import style from './Home.module.css';
-import hero from '../../assets/shiref_mohammed_image_2.jpg'
+import Landing from "./components/Landing/Landing";
+import Skills from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
+import style from "./Home.module.css";
 
 const Home = () => {
   return (
-    <section
-      className={style.home}
-      id="home"
-    >
-      <div className="container">
-        <div className={style.content}>
-          <div className={style.top_title}>
-            <h2 className="section_title">
-              Shiref <span>Mohammed</span>
-            </h2>
+    <section className={style.home}>
+      <Landing />
 
-            <Link
-              to='mailto:shirefmohammed@std.mans.edu.eg'
-            >
-              shirefmohammed@std.mans.edu.eg
-            </Link>
-          </div>
+      <div className={style.break_line}></div>
 
-          <div className={style.image}>
-            <img
-              src={hero}
-              alt="hero"
-            />
-            <span></span>
-          </div>
+      <Skills />
 
-          <div className={style.jop_title}>
-            <h3>Software Developer</h3>
-          </div>
+      <div className={style.break_line}></div>
 
-          <p className={style.description}>
-            welcome here,
+      <Projects />
 
-            I am Shiref, a computer science student with over 15 months of
-            experience in the field.
+      <div className={style.break_line}></div>
 
-            I am passionate about creating beautiful and functional user
-            interfaces that enhance the user experience with high quality and
-            performance.
-
-            I look forward to working together and giving you the best results
-          </p>
-        </div>
-      </div>
+      <Contact />
     </section>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

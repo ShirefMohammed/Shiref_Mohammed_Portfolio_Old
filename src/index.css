@@ -1,55 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300;500;700&display=swap");
 
 :root {
-  --theme: light;
-  --color-bg: #fff;
-  --color-bg-header: #f5f7ff;
-  --color-bg-second: #f5f7ff;
-  --color-bg-card: #f0f2fa;
-  --color-bg-card-hover: #e0e2f0;
-  --main-color: #00a2ff;
-  --color-foreground: #1e202a;
-  --color-muted: #63687e;
-  --color-border: #878a9b;
+  --main: #00a2ff;
+  --text: #1e202a;
+  --textSoft: #63687e;
+  --bg: #fff;
+  --bgLighter: #f5f7ff;
+  --cardBg: #f0f2fa;
+  --cardBgHover: #e0e2f0;
 }
 
 * {
-  border: none;
-  outline: none;
-
-  scroll-behavior: smooth;
-
   margin: 0;
   padding: 0;
+  border: none;
+  outline: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Lemonada", cursive;
+}
 
-  font-size: 15px;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Lemonada', cursive;
+body {
+  color: var(--text);
+  background: var(--bg);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--textSoft);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bgLighter);
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+/* Set skeleton Loadings animation to all images */
+img {
+  background: linear-gradient(
+    100deg,
+    var(--bgLighter) 8%,
+    var(--bg) 30%,
+    var(--bgLighter) 33%
+  );
+  background-size: 200% 100%;
+  animation: 1s shine linear infinite;
+  -webkit-animation: 1s shine linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
 }
 
 .app {
   min-height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  color: var(--color-foreground);
-  background: var(--color-bg);
-
-  -webkit-transition: color .3s, background-color .3s;
-  -moz-transition: color .3s, background-color .3s;
-  -ms-transition: color .3s, background-color .3s;
-  -o-transition: color .3s, background-color .3s;
-  transition: color .3s, background-color .3s;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  -moz-transition: color 0.3s, background-color 0.3s;
+  -ms-transition: color 0.3s, background-color 0.3s;
+  -o-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 .section_title,
@@ -57,71 +82,55 @@ a {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .section_title span {
-  color: var(--main-color);
+  color: var(--main);
 }
 
-/* Start Component */
-
-.container {
-  padding: 0 15px;
-  margin: auto;
-  max-width: 1200px;
-}
-
-.btn_1 {
+.first_btn {
   position: relative;
   overflow: hidden;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  color: var(--main-color);
+  color: var(--main);
   background: transparent;
-  border: 1px solid var(--main-color);
-
+  border: 1px solid var(--main);
   font-weight: 500;
   text-transform: capitalize;
   cursor: pointer;
-
-  -webkit-transition: .3s;
-  -moz-transition: .3s;
-  -ms-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.btn_1 span {
+.first_btn span {
   position: relative;
 }
 
-.btn_1::before {
-  content: '';
+.first_btn::before {
+  content: "";
   width: 0;
   height: 100%;
-  background: var(--main-color);
-
+  background: var(--main);
   position: absolute;
   top: 0;
   left: 0;
-
-  -webkit-transition: .3s;
-  -moz-transition: .3s;
-  -ms-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.btn_1:hover {
-  color: var(--color-bg);
+.first_btn:hover {
+  color: var(--bg);
 }
 
-.btn_1:hover::before {
+.first_btn:hover::before {
   width: 100%;
 }
-
-/* End Component */
