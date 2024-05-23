@@ -15,11 +15,7 @@ const Landing = () => {
       </header>
 
       <div className={style.picture_container}>
-        <img
-          src={"../../../../../public/Hero_Picture.jpg"}
-          alt=""
-          loading="lazy"
-        />
+        <img src={"/Hero_Picture.jpg"} alt="" loading="lazy" />
         <span></span>
       </div>
 
@@ -34,9 +30,9 @@ const Landing = () => {
       </p>
 
       <Link
-        href={"../../../../../public/Shiref_Mohammed_CV.pdf"}
+        href={"/Shiref_Mohammed_CV.pdf"}
         target="_blank"
-        download={"../../../../../public/Shiref_Mohammed_CV.pdf"}
+        download={"/Shiref_Mohammed_CV.pdf"}
         className={`first_btn ${style.download_cv_link}`}
       >
         <span>Download my CV</span>
