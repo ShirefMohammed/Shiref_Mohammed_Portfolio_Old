@@ -29,14 +29,13 @@ const Landing = () => {
         us collaborate to achieve your goals and exceed expectations!
       </p>
 
-      <Link
-        href={"/Shiref_Mohammed_CV.pdf"}
-        target="_blank"
-        download={"/Shiref_Mohammed_CV.pdf"}
+      <a
+        href="/Shiref_Mohammed_CV.pdf"
         className={`first_btn ${style.download_cv_link}`}
+        download="Shiref_Mohammed_CV.pdf"
       >
         <span>Download my CV</span>
-      </Link>
+      </a>
     </section>
   );
 };
