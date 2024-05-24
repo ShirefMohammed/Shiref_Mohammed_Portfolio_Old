@@ -45,7 +45,8 @@
   position: relative;
   width: 100%;
   max-height: calc(100vh - 200px);
-  aspect-ratio: 5 / 3;
+  aspect-ratio: 1366 / 653;
+  aspect-ratio: 1366 / 685;
   overflow-y: auto;
   border-radius: 6px;
   -webkit-border-radius: 6px;
