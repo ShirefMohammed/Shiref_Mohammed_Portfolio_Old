@@ -5,7 +5,7 @@ import style from "./Header.module.css";
 
 const Header = () => {
   const { pathname } = useLocation();
-  const [theme, setTheme] = useState(localStorage.getItem("theme"));
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
   const applyTheme = useApplyTheme();
 
   const toggleTheme = () => {

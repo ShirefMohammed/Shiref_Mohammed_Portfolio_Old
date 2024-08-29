@@ -8,9 +8,7 @@
     "demoUrl": "https://shirefmohammed.github.io/dashboard_1/",
     "codeUrl": "https://github.com/ShirefMohammed/dashboard_1",
     "videoUrl": "",
-    "images": [
-      "/projects_images/Social_Media_Dashboard_Page/01-Home.png"
-    ],
+    "images": ["/projects_images/Social_Media_Dashboard_Page/01-Home.png"],
     "technologies": ["HTML", "CSS"],
     "futures": []
   },
@@ -88,9 +86,7 @@
     "demoUrl": "https://movie-guid-app.pages.dev/",
     "codeUrl": "https://github.com/ShirefMohammed/movie_guid_app",
     "videoUrl": "",
-    "images": [
-      "/projects_images/Simple_Movie_Guide_App/01-Home.png"
-    ],
+    "images": ["/projects_images/Simple_Movie_Guide_App/01-Home.png"],
     "technologies": ["HTML", "CSS", "JavaScript"],
     "futures": []
   },
@@ -168,9 +164,7 @@
     "demoUrl": "https://shirefmohammed.github.io/educational-web/",
     "codeUrl": "https://github.com/ShirefMohammed/educational-web",
     "videoUrl": "",
-    "images": [
-      "/projects_images/Courses_Platform_Page/01-Home.png"
-    ],
+    "images": ["/projects_images/Courses_Platform_Page/01-Home.png"],
     "technologies": ["HTML", "CSS", "JavaScript", "React.js"],
     "futures": []
   },
@@ -196,9 +190,7 @@
     "demoUrl": "https://recipe-social-media-app.onrender.com/",
     "codeUrl": "https://github.com/ShirefMohammed/recipe_social_media-app",
     "videoUrl": "",
-    "images": [
-      "/projects_images/Recipe_Social_Media_App/01-Home.png"
-    ],
+    "images": ["/projects_images/Recipe_Social_Media_App/01-Home.png"],
     "technologies": [
       "HTML",
       "CSS",
@@ -389,6 +381,59 @@
       "📱 Enjoy our app on any device with responsive design",
       "💬 Receive real-time notifications for a seamless experience",
       "🚀 We prioritize accessibility, speed, and safety"
+    ]
+  },
+  {
+    "_id": "18",
+    "title": "NestMart",
+    "desc": "NestMart is an e-commerce web application designed to market our company products and provide customers with the flexibility to browse and purchase items online.",
+    "thumbnail": "/projects_images/NestMart/Thumbnail.png",
+    "type": "fullstack",
+    "demoUrl": "",
+    "codeUrl": "https://github.com/ShirefMohammed/NestMart",
+    "videoUrl": "",
+    "images": [
+      "/projects_images/NestMart/Admin_Categories.png",
+      "/projects_images/NestMart/Admin_Create_Category.png",
+      "/projects_images/NestMart/Admin_Create_Product.png",
+      "/projects_images/NestMart/Admin_Dashboard.png",
+      "/projects_images/NestMart/Admin_Orders.png",
+      "/projects_images/NestMart/Admin_Products.png",
+      "/projects_images/NestMart/Admin_Users.png",
+      "/projects_images/NestMart/Auth_ForgetPassword.png",
+      "/projects_images/NestMart/Auth_Login.png",
+      "/projects_images/NestMart/Auth_Register.png",
+      "/projects_images/NestMart/Cart.png",
+      "/projects_images/NestMart/Category_Products.png",
+      "/projects_images/NestMart/Chat.png",
+      "/projects_images/NestMart/Home.png",
+      "/projects_images/NestMart/Messages_Notifications.png",
+      "/projects_images/NestMart/Order_Details.png",
+      "/projects_images/NestMart/Order_Notifications.png",
+      "/projects_images/NestMart/Orders.png",
+      "/projects_images/NestMart/Product_Details.png",
+      "/projects_images/NestMart/Search_Products.png",
+      "/projects_images/NestMart/User_Profile.png",
+      "/projects_images/NestMart/User_Settings.png"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "Typescript",
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "Sqlite",
+      "Socket.IO",
+      "JWT"
+    ],
+    "futures": [
+      "Authentication and Authorization",
+      "User Account Management",
+      "Product and Category Management",
+      "Cart and Orders",
+      "Chat and Notifications"
     ]
   }
 ]
