@@ -10,7 +10,7 @@
     "videoUrl": "",
     "images": ["/projects_images/Social_Media_Dashboard_Page/01-Home.png"],
     "technologies": ["HTML", "CSS"],
-    "futures": []
+    "features": []
   },
   {
     "_id": "2",
@@ -23,7 +23,7 @@
     "videoUrl": "",
     "images": ["/projects_images/Portfolio_Page_1/01-Home.png"],
     "technologies": ["HTML", "CSS"],
-    "futures": []
+    "features": []
   },
   {
     "_id": "3",
@@ -36,7 +36,7 @@
     "videoUrl": "",
     "images": ["/projects_images/Portfolio_Page_2/01-Home.png"],
     "technologies": ["HTML", "CSS"],
-    "futures": []
+    "features": []
   },
   {
     "_id": "4",
@@ -49,7 +49,7 @@
     "videoUrl": "",
     "images": ["/projects_images/Bootstrap_Design_1/01-Home.png"],
     "technologies": ["HTML", "CSS", "Bootstrap"],
-    "futures": []
+    "features": []
   },
   {
     "_id": "5",
@@ -62,7 +62,7 @@
     "videoUrl": "",
     "images": ["/projects_images/Bootstrap_Design_2/01-Home.png"],
     "technologies": ["HTML", "CSS", "Bootstrap"],
-    "futures": []
+    "features": []
   },
   {
     "_id": "6",
@@ -75,7 +75,7 @@
     "videoUrl": "",
     "images": ["/projects_images/Simple_Podcast_App/01-Home.png"],
     "technologies": ["HTML", "CSS", "JavaScript"],
-    "futures": []
+    "features": []
   },
   {
     "_id": "7",
@@ -88,7 +88,7 @@
     "videoUrl": "",
     "images": ["/projects_images/Simple_Movie_Guide_App/01-Home.png"],
     "technologies": ["HTML", "CSS", "JavaScript"],
-    "futures": []
+    "features": []
   },
   {
     "_id": "8",
@@ -101,7 +101,7 @@
     "videoUrl": "",
     "images": ["/projects_images/Simple_Weather_App/01-Home.png"],
     "technologies": ["HTML", "CSS", "JavaScript"],
-    "futures": []
+    "features": []
   },
   {
     "_id": "9",
@@ -114,7 +114,7 @@
     "videoUrl": "",
     "images": ["/projects_images/Simple_Quiz_App/01-Home.png"],
     "technologies": ["HTML", "CSS", "JavaScript"],
-    "futures": []
+    "features": []
   },
   {
     "_id": "10",
@@ -127,7 +127,7 @@
     "videoUrl": "",
     "images": ["/projects_images/Seven_Theme_Page/01-Home.png"],
     "technologies": ["HTML", "CSS", "JavaScript"],
-    "futures": []
+    "features": []
   },
   {
     "_id": "11",
@@ -140,7 +140,7 @@
     "videoUrl": "",
     "images": ["/projects_images/Restaurant_Page/01-Home.png"],
     "technologies": ["HTML", "CSS", "JavaScript"],
-    "futures": []
+    "features": []
   },
   {
     "_id": "12",
@@ -153,7 +153,7 @@
     "videoUrl": "",
     "images": ["/projects_images/Real_Estate_Page/01-Home.png"],
     "technologies": ["HTML", "CSS", "JavaScript", "React.js"],
-    "futures": []
+    "features": []
   },
   {
     "_id": "13",
@@ -166,7 +166,7 @@
     "videoUrl": "",
     "images": ["/projects_images/Courses_Platform_Page/01-Home.png"],
     "technologies": ["HTML", "CSS", "JavaScript", "React.js"],
-    "futures": []
+    "features": []
   },
   {
     "_id": "14",
@@ -179,7 +179,7 @@
     "videoUrl": "",
     "images": ["/projects_images/Fitness_Gym_Page/01-Home.png"],
     "technologies": ["HTML", "CSS", "JavaScript", "React.js"],
-    "futures": []
+    "features": []
   },
   {
     "_id": "15",
@@ -201,7 +201,7 @@
       "MongoDB",
       "JWT"
     ],
-    "futures": [
+    "features": [
       "🔒 Secure login and access control for users",
       "🖼️ Share your recipes effortlessly with others",
       "👍 Interact with recipes by liking and commenting",
@@ -307,7 +307,7 @@
       "Socket.IO",
       "JWT"
     ],
-    "futures": [
+    "features": [
       "🔒 User authentication and authorization",
       "🖼️ Profile customization and control",
       "📷 Uploading and sharing photos and posts",
@@ -369,7 +369,7 @@
       "Socket.IO",
       "JWT"
     ],
-    "futures": [
+    "features": [
       "🔒 Secure login and access control for users",
       "🎥 Share your videos effortlessly with others",
       "👍 Interact with videos by liking and commenting",
@@ -385,13 +385,13 @@
   },
   {
     "_id": "18",
-    "title": "NestMart",
+    "title": "NestMart - Ecomerce App",
     "desc": "NestMart is an e-commerce web application designed to market our company products and provide customers with the flexibility to browse and purchase items online.",
     "thumbnail": "/projects_images/NestMart/Thumbnail.png",
     "type": "fullstack",
     "demoUrl": "",
     "codeUrl": "https://github.com/ShirefMohammed/NestMart",
-    "videoUrl": "",
+    "videoUrl": "https://firebasestorage.googleapis.com/v0/b/my-portfolio-data-1.appspot.com/o/NestMart_MERN_App_Full_Demo_Too_Fast.mp4?alt=media&token=0cb7ad82-3ca1-4681-80bd-6fe86f57b128",
     "images": [
       "/projects_images/NestMart/Admin_Categories.png",
       "/projects_images/NestMart/Admin_Create_Category.png",
@@ -428,12 +428,77 @@
       "Socket.IO",
       "JWT"
     ],
-    "futures": [
+    "features": [
       "Authentication and Authorization",
       "User Account Management",
       "Product and Category Management",
       "Cart and Orders",
       "Chat and Notifications"
+    ]
+  },
+  {
+    "_id": "19",
+    "title": "FactEcho - News Website",
+    "desc": "FactEcho is a full-stack news web application inspired by Al Jazeera's functionality, use cases, and UI design. It allows users to read, manage, and interact with news articles.",
+    "thumbnail": "/projects_images/FactEcho/Thumbnail.jpg",
+    "type": "fullstack",
+    "demoUrl": "https://factecho-react-client.vercel.app",
+    "codeUrl": "https://github.com/ShirefMohammed/FactEcho",
+    "videoUrl": "https://firebasestorage.googleapis.com/v0/b/my-portfolio-data-1.appspot.com/o/FactEcho_Full_Demo.mp4?alt=media&token=19f7eb35-7a2f-4412-af28-88fea44ab28d",
+    "images": [
+      "/projects_images/FactEcho/Main.Home.jpg",
+      "/projects_images/FactEcho/Main.SuggestedArticles.jpg",
+      "/projects_images/FactEcho/Main.LatestArticles.jpg",
+      "/projects_images/FactEcho/Main.TrendArticles.jpg",
+      "/projects_images/FactEcho/Main.CategoriesArticles.jpg",
+      "/projects_images/FactEcho/Main.SearchArticles.jpg",
+      "/projects_images/FactEcho/Articles.Article.jpg",
+      "/projects_images/FactEcho/Articles.CreateArticle.jpg",
+      "/projects_images/FactEcho/Articles.UpdateArticle.jpg",
+      "/projects_images/FactEcho/Author.Profile.jpg",
+      "/projects_images/FactEcho/Auth.jpg",
+      "/projects_images/FactEcho/UserProfile.Account.jpg",
+      "/projects_images/FactEcho/UserProfile.NewsLetters.jpg",
+      "/projects_images/FactEcho/UserProfile.ReadingList.jpg",
+      "/projects_images/FactEcho/UserProfile.Settings.jpg",
+      "/projects_images/FactEcho/Admin.Dashboard.jpg",
+      "/projects_images/FactEcho/Admin.Users.jpg",
+      "/projects_images/FactEcho/Admin.Authors.jpg",
+      "/projects_images/FactEcho/Admin.Categories.jpg",
+      "/projects_images/FactEcho/Admin.Articles.jpg",
+      "/projects_images/FactEcho/Swagger.jpg",
+      "/projects_images/FactEcho/Swagger.Articles.jpg",
+      "/projects_images/FactEcho/Swagger.Auth.jpg",
+      "/projects_images/FactEcho/Swagger.Authors.jpg",
+      "/projects_images/FactEcho/Swagger.Categories.jpg",
+      "/projects_images/FactEcho/Swagger.Users.jpg"
+    ],
+    "technologies": [
+      "HTML",
+      "CSS",
+      "Typescript",
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "JWT",
+      "OAuth",
+      "Cloudinary",
+      "Vercel",
+      "Neon",
+      "Swagger",
+      "Jest"
+    ],
+    "features": [
+      "Authentication and Authorization (Sign Up, Email Verification, Login, Forgot Password, Google & Facebook Login)",
+      "User Account Management (Profile Details, Reading List, Email News Subscriptions, Account Settings)",
+      "Roles and Permissions (Admin, Authors, Users with Role-based Access Control)",
+      "Article Management (Rich-text Editor for Creating, Updating, and Deleting Articles with Proper Permissions)",
+      "Main Pages (Homepage, Suggested Articles, Trending, Latest, Search Results, Category-based Articles)",
+      "Error Handling Pages (Customized Error Pages for Various Scenarios)",
+      "Admin Dashboard (Manage Users, Authors, Roles, Categories, and Articles with Full Control)"
     ]
   }
 ]

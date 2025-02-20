@@ -66,12 +66,12 @@ const Project = () => {
             ""
           )}
 
-          {/* Project Futures */}
-          {project.futures.length > 0 ? (
+          {/* Project features */}
+          {project.features.length > 0 ? (
             <div className={style.futures}>
               <h3>Futures</h3>
               <ul>
-                {project.futures.map((future, i) => (
+                {project.features.map((future, i) => (
                   <li key={i}>{future}</li>
                 ))}
               </ul>

@@ -35,6 +35,10 @@
   margin-bottom: 5px;
 }
 
+.project_card h3:hover {
+  text-decoration: underline;
+}
+
 .project_card pre {
   width: 100%;
   word-break: auto-phrase;

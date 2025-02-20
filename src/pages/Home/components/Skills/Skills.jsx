@@ -1,4 +1,4 @@
-import skills from "../../../../data/skillsData.json";
+import skillsData from "../../../../data/skillsData.json";
 import style from "./skills.module.css";
 
 const Skills = () => {
@@ -8,11 +8,9 @@ const Skills = () => {
         My <span>Skills</span>
       </h2>
 
-      <ul className={style.skills}>
-        {skills.map((skill) => (
-          <li key={skill._id} title={skill.name}>
-            <img src={skill.image} alt="" loading="lazy" />
-          </li>
+      <ul>
+        {skillsData.skills.map((skill) => (
+          <li key={skill}>{skill}</li>
         ))}
       </ul>
     </section>

@@ -20,12 +20,14 @@ const ProjectCard = ({ project }) => {
   return (
     <div className={style.project_card}>
       {/* Project Thumbnail */}
-      <Link to={`/projects/${project._id}`} title="open details">
+      <Link to={`/projects/${project._id}`}>
         <img src={project.thumbnail} alt="" loading="lazy" />
       </Link>
 
       {/* Project Title */}
-      <h3>{project.title}</h3>
+      <Link to={`/projects/${project._id}`}>
+        <h3>{project.title}</h3>
+      </Link>
 
       {/* Project Desc */}
       {project.desc.length > 200 ? (

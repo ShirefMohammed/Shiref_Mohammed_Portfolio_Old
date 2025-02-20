@@ -20,7 +20,7 @@ const VideoViewer = ({ project, setOpenReviewVideo }) => {
           <FontAwesomeIcon icon={faX} />
         </button>
 
-        <video poster={project.thumbnail} controls>
+        <video poster={project.thumbnail} controls autoPlay>
           <source src={project.videoUrl} type="video/mp4" />
           <source src={project.videoUrl} type="video/ogg" />
           Your browser does not support the video tag.

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
 import style from "./Landing.module.css";
 
@@ -22,11 +23,10 @@ const Landing = () => {
       <h3 className={style.jop_title}>Software Developer</h3>
 
       <p className={style.bio}>
-        Welcome! I am Shiref, a computer science student with 2 years of
-        experience in crafting beautiful and functional user interfaces with
-        React. With expertise in frontend React development and 1 year of
-        Node.js backend experience, I am a versatile MERN stack developer. Let
-        us collaborate to achieve your goals and exceed expectations!
+        Hi, I'm Shiref, a third-year CIS student at Mansoura University and a
+        passionate PERN/MERN stack developer with 2.5+ years of experience. I
+        focus on merging academic knowledge with real-world application through
+        practical projects.
       </p>
 
       <a
